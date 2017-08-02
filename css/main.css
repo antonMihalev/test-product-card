@@ -76,10 +76,23 @@ a {
     right: 40%; }
   .card__product .slick-dots {
     display: flex !important;
+    -webkit-justify-content: center;
+    justify-content: center;
     position: absolute;
-    bottom: 5%; }
+    bottom: 5%;
+    width: 100%; }
     .card__product .slick-dots li button {
-      border: none; }
+      border: 1px solid transparent;
+      font-size: 0rem;
+      line-height: 0rem;
+      width: 3rem;
+      height: 4px;
+      margin: 0 .25rem;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: grey; }
+    .card__product .slick-dots li.slick-active button {
+      background-color: #5c6dfa; }
   .card__photo {
     display: flex;
     -webkit-justify-content: center;
@@ -226,4 +239,11 @@ a {
     box-shadow: 0px 0px 10px #3a5254; }
 
 .cart-btn {
-  width: 147px; }
+  width: 147px;
+  height: 100%;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #5C6DFA;
+  color: white;
+  font-size: 1.7rem; }
