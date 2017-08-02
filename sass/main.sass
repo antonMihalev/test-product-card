@@ -1,0 +1,162 @@
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  
+html
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 10px
+li
+  list-style: none
+a
+  text-decoration: none
+  -webkit-transition: all .5s
+  -moz-transition: all .5s
+  -ms-transition: all .5s
+  -o-transition: all .5s
+  transition: all .5s
+
+.card-wrapper
+  margin: 0 auto
+  width: 100%
+  height: 100vh
+  background-image: url('../img/product-background.jpg')
+  -webkit-background-size: cover 
+  -o-background-size: cover 
+  background-size: cover
+  background-position: center
+  
+.card
+  display: flex
+  -webkit-justify-content: space-around
+  justify-content: space-around
+  position: absolute
+  top: 2%
+  left: 50%
+  -webkit-transform: translate(-50%)
+  -moz-transform: translate(-50%)
+  -ms-transform: translate(-50%)
+  -o-transform: translate(-50%)
+  transform: translate(-50%)
+  width: 802px
+  height: 601px
+  background-image: url('../img/card-bg.png')
+  &__product, &__descr
+    display: flex
+    -webkit-justify-content: space-around
+    justify-content: space-around
+    width: 50%
+    height: 100%
+  &__product
+    .slick-prev,.slick-next
+      position: absolute
+      bottom: 7%
+      padding: .7rem
+      border: none
+      -webkit-border-radius: 15px
+      border-radius: 15px
+      background-color: #FFF
+      -webkit-transition: all .5s 
+      -moz-transition: all .5s 
+      -ms-transition: all .5s 
+      -o-transition: all .5s 
+      transition: all .5s 
+      cursor: pointer
+      &:hover
+        -webkit-box-shadow: 0px 0px 10px #3a5254 
+        box-shadow: 0px 0px 10px #3a5254 
+    .slick-prev
+      left: 40%
+    .slick-next
+      right: 40%
+    .slick-dots
+      display: flex !important
+      position: absolute
+      bottom: 5%
+      li
+        button
+          border: none
+
+  &__photo
+    display: flex
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-align-items: center
+    align-items: center
+    width: 100%
+    height: 100%
+    
+  &__img
+    padding-left: 2%
+    padding-right: 2%
+    img
+      width: 100%
+  
+  &__descr
+    padding: 5rem 3rem 4rem 0rem
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+    
+  &__model
+    width: 100%
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    font-size: 1.4rem
+    letter-spacing: .1rem 
+    p+p
+      text-transform: uppercase
+      a
+        color: #5C6DFA
+        &:hover
+          color: darken(#5C6DFA,10%) 
+      i
+        padding-right: 0.5rem
+  &__text
+
+  &__heading
+    font-size: 2.9rem
+    text-transform: uppercase
+  
+  &__subheading
+    font-size: 2.4rem
+    
+  &__anot
+    font-size: 1.7rem
+    color: #666b6e
+    padding-right: 10%
+    margin: 2rem 0
+  
+  &__anot_wider
+    font-size: 1.4rem
+    width: 90%
+    
+.rating
+  display: flex
+  -webkit-align-items: flex-end
+  align-items: flex-end
+  margin: 1rem 0
+
+  &__stars
+    margin-right: 7%
+  &__value
+    -webkit-flex-grow: 1
+    flex-grow: 1
+    font-size: 1.5rem
+    color: #D1445C
+    span
+      font-size: 1.3rem
+      color: #676C6E 
+  
+    
+
+    
+    
+  
+  
+  
