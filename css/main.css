@@ -9,6 +9,9 @@ html {
   font-family: 'Titillium Web', sans-serif;
   font-size: 10px; }
 
+button {
+  cursor: pointer; }
+
 li {
   list-style: none; }
 
@@ -63,8 +66,7 @@ a {
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
-    transition: all .5s;
-    cursor: pointer; }
+    transition: all .5s; }
     .card__product .slick-prev:hover, .card__product .slick-next:hover {
       -webkit-box-shadow: 0px 0px 10px #3a5254;
       box-shadow: 0px 0px 10px #3a5254; }
@@ -147,7 +149,8 @@ a {
   width: 100%;
   display: flex;
   -webkit-justify-content: space-around;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 3rem 0; }
 
 .card__price {
   color: #D1445C;
@@ -175,5 +178,52 @@ a {
     .dot__default.black {
       margin-left: 1rem;
       background-color: black;
-      -webkit-box-shadow: 0 0 0 2px white,0 0 10px 5px aqua;
-      box-shadow: 0 0 0 2px white,0 0 10px 5px aqua; }
+      -webkit-box-shadow: 0 0 0 2px white,0 0 10px 3px blue;
+      box-shadow: 0 0 0 2px white,0 0 10px 3px blue; }
+
+.card__quantity-cart {
+  width: 100%;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
+.card__quantity {
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+  .card__quantity p {
+    -webkit-align-self: center;
+    align-self: center;
+    color: #3E4950;
+    font-size: 1.3rem; }
+
+.card__q-counter {
+  width: 52px;
+  height: 46px;
+  border: 1px solid #e7e6e3;
+  margin: 0 1rem;
+  text-align: center; }
+  .card__q-counter .q-counter_value {
+    line-height: 46px;
+    font-size: 2rem; }
+
+.card__q-controls {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
+.control-up, .control-down {
+  border: none;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.3rem .5rem; }
+  .control-up:hover, .control-down:hover {
+    -webkit-box-shadow: 0px 0px 10px #3a5254;
+    box-shadow: 0px 0px 10px #3a5254; }
+
+.cart-btn {
+  width: 147px; }

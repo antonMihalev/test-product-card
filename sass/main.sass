@@ -8,6 +8,9 @@
 html
   font-family: 'Titillium Web', sans-serif;
   font-size: 10px
+button
+  cursor: pointer
+
 li
   list-style: none
 a
@@ -62,8 +65,7 @@ a
       -moz-transition: all .5s 
       -ms-transition: all .5s 
       -o-transition: all .5s 
-      transition: all .5s 
-      cursor: pointer
+      transition: all .5s
       &:hover
         -webkit-box-shadow: 0px 0px 10px #3a5254 
         box-shadow: 0px 0px 10px #3a5254 
@@ -158,6 +160,7 @@ a
     display: flex
     -webkit-justify-content: space-around
     justify-content: space-between
+    margin: 3rem 0
   &__price
     color: #D1445C
     font-size: 2.6rem
@@ -185,8 +188,67 @@ a
     &.black
       margin-left: 1rem
       background-color: black
-      -webkit-box-shadow: 0 0 0 2px white,0 0 10px 5px aqua 
-      box-shadow: 0 0 0 2px white,0 0 10px 5px aqua  
+      -webkit-box-shadow: 0 0 0 2px white,0 0 10px 3px blue 
+      box-shadow: 0 0 0 2px white,0 0 10px 3px blue
+
+.card
+  &__quantity-cart
+    width: 100%
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    // background-color: #999 
+    
+  &__quantity
+    display: flex
+    -webkit-justify-content: space-around
+    justify-content: space-around
+    // background-color: #999 
+    p
+      -webkit-align-self: center
+      align-self: center
+      color: #3E4950
+      font-size: 1.3rem
+  &__q-counter
+    width: 52px
+    height: 46px
+    border: 1px solid #e7e6e3
+    margin: 0 1rem
+    text-align: center
+    .q-counter_value
+      line-height: 46px
+      font-size: 2rem      
+
+  &__q-controls
+    display: flex
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    
+.control
+  &-up,&-down
+    border: none
+    background-color: white
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    padding: 0.3rem .5rem
+    &:hover
+      -webkit-box-shadow: 0px 0px 10px #3a5254 
+      box-shadow: 0px 0px 10px #3a5254
+
+.card
+  &__cart
+    // background-color: grey
+
+.cart
+  &-btn
+    width: 147px 
+    
+     
+
+    
 
 
   
